@@ -1,16 +1,33 @@
-#include "iostream"
-#include "chrono"
-#include <ctime>
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <map>
+#include "set"
+#include <queue>
+#include <stack>
+#include <string>
+#include <climits>
+
+#define print1(x) cout << #x << '=' << x << endl
+#define print2(x, y) cout << #x << '=' << x << ',' << #y << '=' << y << endl
+#define nline cout << endl
+
 using namespace std;
+
+using vi = vector<int>;
+using vvi = vector<vector<int>>;
+using ll = long long;
+using l = long;
+using pii = pair<int, int>;
+using vpii = vector<pair<int, int>>;
 
 int main()
 {
-  clock_t begin = clock();
-  for (int i = 0; i < 50000; i++)
-  {
-    cout << "hello world\n";
-  }
-  clock_t end = clock();
-  double elapsed_secs = double(end - begin) / CLOCKS_PER_SEC;
-  cout << "Run time = " << elapsed_secs << " seconds\n";
+  set<int> s;
+  s.insert(1);
+  s.insert(2);
+
+  for (int num : s)
+    cout << num << " ";
+  return 0;
 }
