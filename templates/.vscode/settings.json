@@ -2,7 +2,6 @@
   "files.associations": {
     "*.js": "javascript",
     "*.css": "tailwindcss",
-    "map": "cpp",
-    "iostream": "cpp"
+    "vector": "cpp"
   }
 }

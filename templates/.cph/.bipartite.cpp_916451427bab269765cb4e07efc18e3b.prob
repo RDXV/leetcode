@@ -1,0 +1,1 @@
+{"name":"Local: bipartite","url":"d:\\VS Code\\cpp\\leetcode\\templates\\bipartite.cpp","tests":[{"id":1671016986683,"input":"3 3\n1 3\n1 2\n2 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\VS Code\\cpp\\leetcode\\templates\\bipartite.cpp","group":"local","local":true}
