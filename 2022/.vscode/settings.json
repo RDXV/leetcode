@@ -3,6 +3,7 @@
     "*.js": "javascript",
     "*.css": "tailwindcss",
     "map": "cpp",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "vector": "cpp"
   }
 }
