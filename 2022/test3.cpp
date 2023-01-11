@@ -22,12 +22,8 @@ using vpii = vector<pair<int, int>>;
 
 int main()
 {
-
-  priority_queue<int> pq;
   int num;
   cin >> num;
-  pq.push(12);
-  cout<<pq.top()<<"\n";
   cout << num * 3;
   return 0;
 }
