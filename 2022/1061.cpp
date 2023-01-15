@@ -62,9 +62,15 @@ int findParent(int node)
 
 void Union(int f, int s)
 {
+  if (f == 14)
+    cout << char('a' + s) << " " << s << "\n";
+  int prev = f;
   // Find parent of both
   f = findParent(f);
   s = findParent(s);
+
+  if (prev == 14)
+    print2(f, s);
 
   if (f == s)
     return;
@@ -116,3 +122,20 @@ int main()
   cout << smallestEquivalentString("hello", "world", "hold");
   return 0;
 }
+
+/*
+https://www.hackerearth.com/practice/notes/abhinav92003/disjoint-set-union/
+
+Notice that we used the function call findParent( i ) to find the parent of the ith node, instead of directly looking at parent[ i ]. The reason for this is:
+The parent of a node is not changed as soon as its affiliation to a connected component is changed. We postpone this to when we actually need to find the
+parent of the node. Doing this avoids many useless operations. So, parent[ i ] may not contain the updated value of the connected component that i belongs
+to. That's why it's important that we use findParent( i ) instead of being lazy and taking the value directly from parent[ i ].
+*/
+
+/*
+When we do Union('o','d'), we store f=parent[f] and s=parent[s]
+where parent['o']='e' and parent['d']='d', Now as 'd'<'e', parent['e']='d' is set
+This is done as the last step where right now, parent['o']='e' but parent['e']='d'
+
+Unless we do findParent('o') as last step, we wont get the correct parent of 'o'
+*/
