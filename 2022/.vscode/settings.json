@@ -6,6 +6,9 @@
     "iostream": "cpp",
     "vector": "cpp",
     "algorithm": "cpp",
-    "xstring": "cpp"
+    "xstring": "cpp",
+    "unordered_map": "cpp",
+    "queue": "cpp",
+    "utility": "cpp"
   }
 }
